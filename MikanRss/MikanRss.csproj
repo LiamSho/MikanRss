@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
+  
+    <PropertyGroup>
+      <PackageId>MikanRss</PackageId>
+      <PackageVersion>1.0.0</PackageVersion>
+      <Authors>LiamSho</Authors>
+      <Owners>LiamSho</Owners>
+      <Title>MikanRss</Title>
+      <Description>解析和反序列化 MikanProject 的 RSS Feed</Description>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+      <Copyright>Copyright ©  2022 LiamSho</Copyright>
+      <PackageProjectUrl>https://github.com/LiamSho/MikanRss</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/LiamSho/MikanRss</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageTags>rss;mikan</PackageTags>
+      <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+      <NeutralLanguage>zh-Hans-CN</NeutralLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\icon.png" Pack="true" PackagePath="\"/>
+      <None Include="..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+  
+</Project>
