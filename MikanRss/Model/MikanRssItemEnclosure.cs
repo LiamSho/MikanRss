@@ -32,7 +32,7 @@ public record MikanRssItemEnclosure
     ///     rss -> channel -> item -> enclosure::length
     /// </remarks>
     [XmlAttribute("length")]
-    public long? Length { get; set; }
+    public long Length { get; set; }
 
     /// <summary>
     ///     附件 URL

@@ -41,7 +41,7 @@ public record MikanRssItemTorrent
     ///     rss -> channel -> item -> torrent -> length
     /// </remarks>
     [XmlElement("contentLength")]
-    public long? ContentLength { get; set; }
+    public long ContentLength { get; set; }
 
     /// <summary>
     ///     发布日期
@@ -50,5 +50,5 @@ public record MikanRssItemTorrent
     ///     rss -> channel -> item -> torrent -> pubDate
     /// </remarks>
     [XmlElement("pubDate")]
-    public DateTime PublishTime { get; set; }
+    public DateTime? PublishTime { get; set; }
 }
