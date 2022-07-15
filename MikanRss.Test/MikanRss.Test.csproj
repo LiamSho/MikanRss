@@ -4,7 +4,6 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <LangVersion>preview</LangVersion>
         <IsPackable>false</IsPackable>
     </PropertyGroup>
 
@@ -23,6 +22,18 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MikanRss\MikanRss.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resources\Test_Full_Spec.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\Test_No_Item.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\Test_One_Item.xml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>
