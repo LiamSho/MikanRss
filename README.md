@@ -12,11 +12,10 @@ MikanRss 是基于 .NET Standard 2.0 编写的类库，兼容所有支持 .NET S
 dotnet add package MikanRss
 ```
 
-MikanRss 提供了两个反序列化方法重载：
+MikanRss 提供了一个序列化方法：
 
 ```csharp
-public static MikanRss? MikanRss.MikanRssSerializer.Deserialize(string xml);
-public static MikanRss? MikanRss.MikanRssSerializer.Deserialize(Stream stream);
+public static MikanRss? MikanRss.MikanRssSerializer.Deserialize(string rss);
 ```
 
 若反序列化失败，返回值将会是 Null，`MikanRss` 对象中的所有属性均是可空的值，使用前应当先判断值是否为空
