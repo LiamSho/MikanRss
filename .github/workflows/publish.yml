@@ -34,7 +34,7 @@ jobs:
         run: dotnet test -c Release --no-build
 
       - name: "Pack"
-        run: dotnet pack -c Release --no-build -o ./artifacts -p:PackageVersion={{ github.event.release.tag_name }}
+        run: dotnet pack -c Release --no-build -o ./artifacts -p:PackageVersion=${{ github.event.release.tag_name }} ./MikanRss/MikanRss.csproj
 
       - name: "Publish"
-        run: dotnet nuget push ./artifacts/*.nupkg -s https://api.nuget.org/v3/index.json -k {{ secrets.NUGET_API_KEY }}
+        run: dotnet nuget push ./artifacts/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
